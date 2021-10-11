@@ -123,3 +123,7 @@ h3 + h4 {
 	margin-left: 0;
 	padding-left: 0;
 }
+
+.pad {
+	margin-top: 4ex;
+}
