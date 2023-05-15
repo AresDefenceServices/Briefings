@@ -1,0 +1,160 @@
+body {
+	height: auto;
+}
+
+.paper {
+	padding: 50px;
+	font-family: monospace!important;
+	text-transform: uppercase;
+
+	background: #ececec url(../img/paper_overlay.png);
+	background-position-y: center;
+
+	max-width: 210mm;
+	margin-bottom:-30px;
+	font-size: 16px;
+}
+
+@media (min-width: 210mm){
+	body {
+		background: #333;
+	}
+
+	.paper {
+		margin-top: 20px;
+		margin-bottom: 20px
+	}
+}
+
+header, footer {
+	color: #2b2b2b;
+	opacity: 70%;
+	text-align: center;
+	font-weight: bold;
+}
+
+.sheet {
+	padding-top: 50px;
+}
+
+/*.content {*/
+/*	margin-top: 24px;*/
+/*}*/
+
+/*.content ~ header {*/
+/*	margin-top: -24px;*/
+/*}*/
+
+header {
+	position: relative;
+	top: -38px;
+	margin: 0;
+	margin-bottom: -24px;
+}
+
+footer {
+	/*margin-top: 40px;*/
+	/*margin-bottom: -20px;*/
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	left: 0;
+	right: 0;
+	margin: auto;
+	transform: translateY(-50%);
+}
+
+.normal {
+	text-transform: none;
+}
+
+.no-grow {
+	flex-grow: 0;
+}
+
+h1 small {
+	color: #4C4C4C;
+	font-size: 0.8em;
+}
+
+.orders {
+	color: red;
+	font-weight: bold;
+	font-size: 22px;
+}
+
+.order-header {
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+h1 {
+	font-size: 24px;
+	line-height: 0.8;
+	color: #242424;
+	font-family: monospace
+}
+
+h2 {
+	text-decoration: underline;
+	font-size: 16px;
+	color: #242424;
+	font-weight: normal;
+	font-family: monospace;
+}
+
+h2:not(:first-of-type) {
+	margin-top: 12ex;
+}
+
+h3 {
+	font-size: 16px;
+	font-weight: bold;
+	font-family: monospace;
+	margin-top: 0;
+	padding-top: 0;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+h4, h5 {
+	font-size: 16px;
+	font-style: italic;
+	margin-top: 4ex;
+	padding-top: 0;
+	margin-bottom: 4px;
+	padding-bottom: 0;
+	text-indent: 48px
+}
+
+h6 {
+	font-style: italic;
+	text-decoration: underline;
+	text-indent: 96px;
+	margin-top: 2ex;
+}
+
+h5 {
+	text-indent: 96px;
+	margin-top: 1ex;
+}
+
+h3 + h4 {
+	margin-top: 3ex;
+}
+
+.img-responsive {
+	max-width: 100%;
+}
+
+.no-buttons, .no-buttons li {
+	list-style: none!important;
+	list-style-position: inside;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.pad {
+	margin-top: 4ex;
+}
